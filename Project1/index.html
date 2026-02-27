@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Banquete de Valhalla</title>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <h1 id="Inicio">O Banquete de Valhalla</h1>
     <p><em>Receitas dignas de deuses, heróis e gigantes.</em></p>
   </header>
-  <nav aria-label="Navegação principal">
+  <nav aria-label="Navegação principal" class="topnav">
     <ul>
       <li><a href="#Inicio">O Salão Principal</a></li>
       <li><a href="#Idunn">Pomar de Idunn</a></li>
@@ -35,25 +36,27 @@
         </ul>
       </nav>
 
-      <article class="receitas" id="Midgard">
-        <h3>O Guisado de Jämtland</h3>
-        <img src="https://static.itdg.com.br/images/auto-auto/f6f3e1b15273c5dee15bae1666407d3f/receitas-de-guisado.jpg" alt="Guisado" height="200px">
-        <p>Um guisado de carne rústico, denso e forte.</p>
-        <a href="">Saiba Mais</a>
-      </article>
+      <div class="Card-receitas">
+        <article class="receitas" class="Midgard">
+          <h3>O Guisado de Jämtland</h3>
+          <img src="https://static.itdg.com.br/images/auto-auto/f6f3e1b15273c5dee15bae1666407d3f/receitas-de-guisado.jpg" alt="Guisado">
+          <p>Um guisado de carne rústico, denso e forte.</p>
+          <a href="">Saiba Mais</a>
+        </article>
 
-      <article id="Idunn" class="receitas">
-        <h3>Maçãs de Idunn</h3>
-        <img src="https://receitadaboa.com.br/wp-content/uploads/2024/11/iStock-2162794568.jpg" alt="Maça Assada" height="200px">
-        <p>Maçãs assadas com mel, nozes e canela.</p>
-        <a href="">Saiba Mais</a>
-      </article>
-      <article id="Hymir" class="receitas">
-        <h3>Hidromel de Odin</h3>
-        <img src="https://segredosdomundo.r7.com/wp-content/uploads/2019/12/hidromel-o-que-e-quando-surgiu-como-beber-e-onde-comprar-4.jpg" alt="Hidromel" height="200px" width="300px">
-        <p>Versão simplificada e rápida (não fermentada) para o dia a dia.</p>
-        <a href="">Saiba Mais</a>
-      </article>
+        <article class="receitas" class="Idunn">
+          <h3>Maçãs de Idunn</h3>
+          <img src="https://receitadaboa.com.br/wp-content/uploads/2024/11/iStock-2162794568.jpg" alt="Maça Assada">
+          <p>Maçãs assadas com mel, nozes e canela.</p>
+          <a href="">Saiba Mais</a>
+        </article>
+        <article class="receitas" class="Hymir">
+          <h3>Hidromel de Odin</h3>
+          <img src="https://segredosdomundo.r7.com/wp-content/uploads/2019/12/hidromel-o-que-e-quando-surgiu-como-beber-e-onde-comprar-4.jpg" alt="Hidromel">
+          <p>Versão simplificada e rápida (não fermentada) para o dia a dia.</p>
+          <a href="">Saiba Mais</a>
+        </article>
+      </div>
     </section>
 
     <section id="SobreNos">
@@ -71,8 +74,6 @@
       <h2>Runas da Cozinha</h2>
       <p>Em breve...</p>
     </section>
-
-    </article>
   </main>
 
   <footer>
@@ -106,7 +107,6 @@
 
       <p>© 2026 Banquete de Valhalla. Desenvolvido sob a proteção de Odin. Todos os direitos reservados.</p>
     </div>
-
   </footer>
 </body>
 

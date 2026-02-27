@@ -1,0 +1,320 @@
+/* Base */
+* {
+  /* Dialogo responsivo */
+  box-sizing: border-box;
+}
+
+body {
+  /* margem 0 */
+  margin: 0;
+  /* Fontes do site */
+  font-family: system-ui, Arial, sans-serif;
+  /* Altura de cada linha */
+  line-height: 1.5;
+  /* Cores das letras */
+  color: #1a1a1a;
+  /* Cor do fundo */
+  background: #fafafa;
+}
+
+/* Container geral para centralizar tudo com largura bonita */
+/* Centralizar o conteudo */
+header,
+.topnav,
+main,
+footer {
+  /* Só permite que cresça até 1100px */
+  max-width: 1100px;
+  /* margem top igual a 0 e distribui a margem lateral igualmente */
+  margin: 0 auto;
+  /* Ajuda na resposividade do site para nao ficar colado no celular */
+  padding: 0 20px;
+}
+
+/* =========================
+   2) HEADER (tudo alinhado ao meio)
+   ========================= */
+header {
+  /* Distancia do conteudo para a borda do conteiner */
+  padding: 28px 20px 12px;
+  /* Deixa o texto alinhado ao meio */
+  text-align: center;
+}
+
+header h1 {
+  /* Deixa uma margem segura do h1 para a borda ou outro texto */
+  margin: 0 0 6px;
+  font-size: 2.2rem;
+}
+
+header p {
+  /* Dá uma cor difetente para o p da header */
+  margin: 0;
+  color: #555;
+}
+
+/* =========================
+   3) NAV EM CIMA (abaixo do header)
+   ========================= */
+.topnav {
+  /* Dá uma distancia segura entre os elementos e cria uma linha */
+  padding: 12px 20px 18px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.topnav ul {
+  /* Tira a bolinha da lista não ordenada */
+  list-style: none;
+  /* Zera margem e padding desnecessario */
+  margin: 0;
+  padding: 0;
+  /* Deixa o display flex */
+  display: flex;
+  /* Tira o item não diminuir demais */
+  flex-wrap: wrap;
+  /* Espaço entre os items */
+  gap: 10px;
+  /* Deixa os itens na horizontal(eixo X) e no centro */
+  justify-content: center; /* centraliza os links */
+  align-items: center;
+}
+
+.topnav a {
+  /* Tira o sublinhado do link */
+  text-decoration: none;
+  /* Dá cor para o texto */
+  color: #1a1a1a;
+  /* Distancia do texto para a borda do botão */
+  padding: 10px 12px;
+  /* border-radius: 999px; */
+  /* Deixa na mesma linha mais permite mudança de altura e largura */
+  display: inline-block;
+}
+/* Quando coloca o mouse em cima */
+.topnav a:hover {
+  /* Cor do mundo */
+  background: #f1f1f1;
+}
+
+/* =========================
+   4) MAIN
+   ========================= */
+main {
+  padding: 26px 20px 40px;
+}
+
+/* Seções com respiro */
+section {
+  margin-top: 32px;
+}
+
+#Receitas h2,
+#SobreNos h2,
+#Blog h2 {
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+/* =========================
+   5) NAV DE CATEGORIAS (dentro de receitas) CENTRALIZADO
+   ========================= */
+#Receitas nav ul {
+  list-style: none;
+  margin: 0 auto 18px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#Receitas nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+#Receitas nav a:hover {
+  background: #f1f1f1;
+}
+
+/* =========================
+   6) GRID DOS CARDS (tamanho bom, não tão largo, pronto pra crescer)
+   ========================= */
+#Card-receitas {
+  display: grid;
+  gap: 18px;
+
+  /* cards responsivos com largura mínima decente */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  /* deixa o bloco todo alinhado e "bonito" */
+  align-items: stretch;
+}
+
+/* Card */
+.receitas {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* deixa o card com uma altura visual consistente quando tiver vários */
+  min-height: 360px;
+}
+
+.receitas h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.receitas img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Texto do card */
+.receitas p {
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Link do card alinhado ao centro e fixado mais pra baixo */
+.receitas a {
+  margin-top: auto; /* empurra o botão pro fim do card */
+  align-self: center;
+
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+}
+
+.receitas a:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* =========================
+   7) SOBRE NÓS / BLOG (texto confortável e centralizado)
+   ========================= */
+#SobreNos {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#SobreNos p {
+  color: #333;
+}
+
+#SobreNos h4 {
+  margin: 18px 0 6px;
+}
+
+/* =========================
+   8) FOOTER (menus lado a lado com flex)
+   ========================= */
+footer {
+  border-top: 1px solid #e6e6e6;
+  padding: 24px 20px;
+  background: #fff;
+}
+
+.rodape {
+  display: flex;
+  gap: 26px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* quebra no mobile */
+  align-items: flex-start;
+}
+
+/* Cada coluna */
+.rodape .colunas {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Títulos do footer */
+.rodape .colunas > p:first-child {
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+/* Links em coluna */
+.rodape a {
+  display: block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.rodape form {
+  display: grid;
+  gap: 10px;
+  max-width: 320px;
+}
+
+.rodape label {
+  font-weight: 600;
+}
+
+.rodape input[type="email"] {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+}
+
+.rodape input[type="submit"] {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #1a1a1a;
+  background: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rodape input[type="submit"]:hover {
+  opacity: 0.92;
+}
+
+/* Frase e copyright alinhados ao centro */
+.rodape > p {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 14px 0 0;
+  color: #444;
+}
+
+/* =========================
+   9) RESPONSIVO (mobile)
+   ========================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .topnav a {
+    width: 100%;
+    text-align: center;
+  }
+}
