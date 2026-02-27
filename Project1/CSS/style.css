@@ -144,62 +144,62 @@ section {
 }
 
 /* =========================
-   6) GRID DOS CARDS (tamanho bom, não tão largo, pronto pra crescer)
+   6) CARDS DAS RECEITAS (FLEXBOX retangular)
    ========================= */
-#Card-receitas {
-  display: grid;
+
+/* Container dos cards */
+.Card-receitas {
+  display: flex;
+  flex-wrap: wrap;
   gap: 18px;
-
-  /* cards responsivos com largura mínima decente */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-  /* deixa o bloco todo alinhado e "bonito" */
+  justify-content: center; /* centraliza o conjunto */
   align-items: stretch;
 }
 
-/* Card */
+/* Card retangular (horizontal) */
 .receitas {
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 18px;
-  padding: 16px;
+  padding: 14px;
+
+  /* deixa o card retangular */
+  width: 340px; /* não fica largo */
+  min-height: 170px; /* retangular */
 
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  /* deixa o card com uma altura visual consistente quando tiver vários */
-  min-height: 360px;
+  flex-direction: row; /* horizontal */
+  gap: 12px;
+  align-items: center;
 }
 
-.receitas h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
+/* imagem menor, estilo exemplo */
 .receitas img {
-  width: 100%;
-  height: 190px;
+  width: 140px;
+  height: 110px;
   object-fit: cover;
   border-radius: 14px;
-  display: block;
+  flex-shrink: 0; /* impede a imagem de "esmagar" */
 }
 
-/* Texto do card */
+/* bloco de texto do lado direito */
+.receitas h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  text-align: left;
+}
+
 .receitas p {
-  margin: 0;
+  margin: 0 0 10px;
   color: #333;
-  text-align: center;
+  text-align: left;
 }
 
-/* Link do card alinhado ao centro e fixado mais pra baixo */
+/* botão/link alinhado */
 .receitas a {
-  margin-top: auto; /* empurra o botão pro fim do card */
-  align-self: center;
-
+  display: inline-block;
   text-decoration: none;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 12px;
   border: 1px solid #1a1a1a;
   color: #1a1a1a;
@@ -208,6 +208,11 @@ section {
 .receitas a:hover {
   background: #1a1a1a;
   color: #fff;
+}
+
+/* Para o conteúdo (texto+botão) ocupar o espaço */
+.receitas > :not(img) {
+  flex: 1;
 }
 
 /* =========================
@@ -310,11 +315,27 @@ footer {
    9) RESPONSIVO (mobile)
    ========================= */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-  .topnav a {
+  .receitas {
     width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .receitas img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .receitas h3,
+  .receitas p {
     text-align: center;
   }
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -16,10 +16,10 @@
   <nav aria-label="Navegação principal" class="topnav">
     <ul>
       <li><a href="#Inicio">O Salão Principal</a></li>
-      <li><a href="#Idunn">Pomar de Idunn</a></li>
-      <li><a href="#Midgard">Caça de Midgard</a></li>
-      <li><a href="#Hymir">Caldeirão de Hymir</a></li>
-      <li><a href="#Vanaheim">Ervas de Vanaheim</a></li>
+      <li><a href="#asgard">Pomar de Idunn</a></li>
+      <li><a href="#midgard">Caça de Midgard</a></li>
+      <li><a href="#valhalla">Caldeirão de Hymir</a></li>
+      <li><a href="#vanaheim">Ervas de Vanaheim</a></li>
       <li><a href="#Blog">Runas da Cozinha</a></li>
       <li><a href="#Contato">O Clã</a></li>
     </ul>
@@ -29,34 +29,127 @@
       <h2>Receitas</h2>
       <nav aria-label="Categorias de receitas">
         <ul>
-          <li> <a href="#">Receitas de Asgard</a></li>
-          <li><a href="#">Tesouros de Midgard</a></li>
-          <li><a href="#">Bebidas de Valhalla</a></li>
-          <li><a href="#">Segredos de Vanaheim</a></li>
+          <li><a href="#asgard">Receitas de Asgard</a></li>
+          <li><a href="#midgard">Tesouros de Midgard</a></li>
+          <li><a href="#valhalla">Bebidas de Valhalla</a></li>
+          <li><a href="#vanaheim">Segredos de Vanaheim</a></li>
         </ul>
       </nav>
 
-      <div class="Card-receitas">
-        <article class="receitas" class="Midgard">
-          <h3>O Guisado de Jämtland</h3>
-          <img src="https://static.itdg.com.br/images/auto-auto/f6f3e1b15273c5dee15bae1666407d3f/receitas-de-guisado.jpg" alt="Guisado">
-          <p>Um guisado de carne rústico, denso e forte.</p>
-          <a href="">Saiba Mais</a>
-        </article>
+      <!-- ===== ASGARD ===== -->
+      <section id="asgard" aria-label="Receitas de Asgard">
+        <h3>Receitas de Asgard</h3>
 
-        <article class="receitas" class="Idunn">
-          <h3>Maçãs de Idunn</h3>
-          <img src="https://receitadaboa.com.br/wp-content/uploads/2024/11/iStock-2162794568.jpg" alt="Maça Assada">
-          <p>Maçãs assadas com mel, nozes e canela.</p>
-          <a href="">Saiba Mais</a>
-        </article>
-        <article class="receitas" class="Hymir">
-          <h3>Hidromel de Odin</h3>
-          <img src="https://segredosdomundo.r7.com/wp-content/uploads/2019/12/hidromel-o-que-e-quando-surgiu-como-beber-e-onde-comprar-4.jpg" alt="Hidromel">
-          <p>Versão simplificada e rápida (não fermentada) para o dia a dia.</p>
-          <a href="">Saiba Mais</a>
-        </article>
-      </div>
+        <div class="Card-receitas">
+          <article class="receitas asgard" id="Idunn">
+            <h4>Maçãs Assadas (Eplebakte / Baked Apples)</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT03AQgJ6t285hPLqSXqL7fN9S_gt9rguNgbw&s" alt="Maçãs assadas">
+            <p>Receita clássica de maçãs assadas com mel/canela — perfeita pro “Pomar de Idunn”.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas asgard">
+            <h4>Köttbullar (Almôndegas Suecas)</h4>
+            <img src="https://allnuts.com.br/wp-content/uploads/2025/12/almondegas-suecas-2.jpg" alt="Almôndegas suecas">
+            <p>Um dos pratos mais famosos da culinária sueca: almôndegas com molho cremoso.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas asgard">
+            <h4>Gravlax (Salmão Curado)</h4>
+            <img src="https://gastronomiacarioca.zonasul.com.br/wp-content/uploads/2023/10/gravlax_zona_sul_destaque_ilustrativa.jpg" alt="Salmão gravlax">
+            <p>Salmão curado com sal, açúcar e endro (dill). Um clássico escandinavo.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ===== MIDGARD ===== -->
+      <section id="midgard" aria-label="Tesouros de Midgard">
+        <h3>Tesouros de Midgard</h3>
+
+        <div class="Card-receitas">
+          <article class="receitas midgard" id="Midgard">
+            <h4>Fårikål (Ensopado Norueguês de Cordeiro e Repolho)</h4>
+            <img src="https://i1.vrs.gd/gladkokken/uploads/images/Farikal-over.jpg?width=1800&height=1000&format=jpg&quality=80&crop=2400%2C1334%2C0%2C131" alt="Ensopado de cordeiro com repolho">
+            <p>Prato tradicional da Noruega: cordeiro cozido com repolho e pimenta-do-reino.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas midgard">
+            <h4>Kalops (Ensopado Sueco de Carne)</h4>
+            <img src="https://assets.icanet.se/t_ICAseAbsoluteUrl/imagevaultfiles/id_249749/cf_259/lyxig_kalops_med_mormorskokta_morotter.jpg" alt="Ensopado de carne">
+            <p>Ensopado sueco de carne com especiarias — comfort food nórdica real.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas midgard">
+            <h4>Rösti / Raggmunk (Panqueca de Batata)</h4>
+            <img src="https://assets.icanet.se/t_ICAseAbsoluteUrl/imagevaultfiles/id_250994/cf_259/raggmunk_med_flask.jpg" alt="Panqueca de batata">
+            <p>Batata ralada na frigideira — simples, rústico e bem “comida de viajante”.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ===== VALHALLA ===== -->
+      <section id="valhalla" aria-label="Bebidas de Valhalla">
+        <h3>Bebidas de Valhalla</h3>
+
+        <div class="Card-receitas">
+          <article class="receitas valhalla" id="Hymir">
+            <h4>Hidromel (Mead)</h4>
+            <img src="https://abori.com.br/wp-content/uploads/2025/10/bebida-alcoolica-produzida-de-forma-sustentavel-1999x1125.jpg" alt="Bebida dourada tipo hidromel">
+            <p>Hidromel é real e histórico: bebida fermentada de mel (ou versão sem fermentação).</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas valhalla">
+            <h4>Glögg (Vinho Quente Escandinavo)</h4>
+            <img src="https://denmark.dk/-/media/websites/denmarkdk/people-and-culture/danish-christmas-recipes/juleglogg.ashx?mw=480&hash=A33C542594CD2126ABA65A9B149A5D99" alt="Glögg">
+            <p>Tradicional em países nórdicos no inverno: especiarias, frutas secas e calor.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas valhalla">
+            <h4>Saft de Lingonberry (Suco/Xarope de Airela)</h4>
+            <img src="https://m.media-amazon.com/images/I/51FpdJ1krAL._AC_UF894,1000_QL80_.jpg" alt="Suco de frutas vermelhas">
+            <p>Bebida comum na Escandinávia com lingonberry (airela) — alternativa sem álcool.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ===== VANAHEIM ===== -->
+      <section id="vanaheim" aria-label="Segredos de Vanaheim">
+        <h3>Segredos de Vanaheim</h3>
+
+        <div class="Card-receitas">
+          <article class="receitas vanaheim" id="Vanaheim">
+            <h4>Nässelsoppa (Sopa de Urtiga)</h4>
+            <img src="https://images.arla.com/recordid/DDF64AFB-C1A3-433A-B35F848C1566C30F/nasselsoppa-med-mjukkokt-agg-och-rostad-lok.jpg" alt="Sopa verde de ervas">
+            <p>Sopa sueca tradicional feita com urtiga — bem “ervas e natureza”, total Vanaheim.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas vanaheim">
+            <h4>Batatas com Endro (Dill Potatoes)</h4>
+            <img src="https://casadoarroz.com.br/wp-content/uploads/2019/01/batata-assada-com-alho-e-endro_02a701d90_3027.jpg" alt="Batatas com ervas">
+            <p>Batatas cozidas com endro e manteiga — acompanhamento escandinavo real e famoso.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+
+          <article class="receitas vanaheim">
+            <h4>Rye Crispbread (Knäckebröd) com Ervas</h4>
+            <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/rye_crispbread_96848_16x9.jpg" alt="Pão crocante com ervas">
+            <p>Pão crocante de centeio (muito típico) + cobertura de ervas e manteiga.</p>
+            <a href="">Saiba Mais</a>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section id="SobreNos">
@@ -76,7 +169,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="Contato">
     <div class="rodape">
       <div class="colunas">
         <p>O Salão</p>
